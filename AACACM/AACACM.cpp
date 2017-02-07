@@ -115,6 +115,10 @@ static const unsigned char chan_map[AACACM_NCHANS] = {
 	1, 2, 3, 4, 5, 6, 8
 };
 
+#ifdef __cplusplus
+extern "C" { LRESULT CALLBACK DriverProc(DWORD_PTR, HDRVR, UINT, LPARAM, LPARAM); }
+#endif
+
 
 BOOL APIENTRY DllMain(HANDLE hModule,
 	DWORD ul_reason_for_call, LPVOID lpReserved)
