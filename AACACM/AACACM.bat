@@ -24,3 +24,4 @@ ECHO The file %FILENAME% is missing!
 pause > nul
 
 :End
+exit
